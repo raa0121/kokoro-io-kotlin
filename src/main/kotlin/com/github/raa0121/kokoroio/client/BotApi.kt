@@ -20,6 +20,7 @@ class BotApi(basePath: kotlin.String = "https://kokoro.io/api") : ApiClient(base
     /**
     * 
     * Creates a new message.
+    * @param token
     * @param channelId  
     * @param message  
     * @param displayName  (optional)
@@ -28,10 +29,10 @@ class BotApi(basePath: kotlin.String = "https://kokoro.io/api") : ApiClient(base
     * @return MessageEntity
     */
     @Suppress("UNCHECKED_CAST")
-    fun postV1BotChannelsChannelIdMessages(channelId: kotlin.String, message: kotlin.String, displayName: kotlin.String?, nsfw: kotlin.Boolean?, expandEmbedContents: kotlin.Boolean?) : MessageEntity {
+    fun postV1BotChannelsChannelIdMessages(token: kotlin.String, channelId: kotlin.String, message: kotlin.String, displayName: kotlin.String, nsfw: kotlin.Boolean, expandEmbedContents: kotlin.Boolean) : MessageEntity {
         val localVariableBody: kotlin.Any? = mapOf("message" to "$message", "display_name" to "$displayName", "nsfw" to "$nsfw", "expand_embed_contents" to "$expandEmbedContents")
         val localVariableQuery: MultiValueMap = mapOf()
-        val localVariableHeaders: kotlin.collections.Map<kotlin.String,kotlin.String> = mapOf("Content-Type" to "multipart/form-data")
+        val localVariableHeaders: kotlin.collections.Map<kotlin.String,kotlin.String> = mapOf("Content-Type" to "multipart/form-data", "X-Access-Token" to "$token")
         val localVariableConfig = RequestConfig(
             RequestMethod.POST,
             "/v1/bot/channels/{channel_id}/messages".replace("{"+"channel_id"+"}", "$channelId"),
