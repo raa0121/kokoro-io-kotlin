@@ -19,7 +19,7 @@ Delete a message.
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = MessagesApi()
 val messageId : kotlin.Int = 56 // kotlin.Int | 

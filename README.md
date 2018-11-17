@@ -67,20 +67,20 @@ Class | Method | HTTP request | Description
 <a name="documentation-for-models"></a>
 ## Documentation for Models
 
- - [io.swagger.client.models.AccessTokenEntity](docs/AccessTokenEntity.md)
- - [io.swagger.client.models.AvatarEntity](docs/AvatarEntity.md)
- - [io.swagger.client.models.ChannelEntity](docs/ChannelEntity.md)
- - [io.swagger.client.models.ChannelWithMembershipsEntity](docs/ChannelWithMembershipsEntity.md)
- - [io.swagger.client.models.ChannelWithoutMembershipEntity](docs/ChannelWithoutMembershipEntity.md)
- - [io.swagger.client.models.DeviceEntity](docs/DeviceEntity.md)
- - [io.swagger.client.models.EmbedContentEntity](docs/EmbedContentEntity.md)
- - [io.swagger.client.models.EmbedDataEntity](docs/EmbedDataEntity.md)
- - [io.swagger.client.models.EmbedDataImageInfoEntity](docs/EmbedDataImageInfoEntity.md)
- - [io.swagger.client.models.EmbedDataMediaEntity](docs/EmbedDataMediaEntity.md)
- - [io.swagger.client.models.MembershipEntity](docs/MembershipEntity.md)
- - [io.swagger.client.models.MembershipWithoutChannelEntity](docs/MembershipWithoutChannelEntity.md)
- - [io.swagger.client.models.MessageEntity](docs/MessageEntity.md)
- - [io.swagger.client.models.ProfileEntity](docs/ProfileEntity.md)
+ - [com.github.raa0121.kokoroio.model.AccessTokenEntity](docs/AccessTokenEntity.md)
+ - [com.github.raa0121.kokoroio.model.AvatarEntity](docs/AvatarEntity.md)
+ - [com.github.raa0121.kokoroio.model.ChannelEntity](docs/ChannelEntity.md)
+ - [com.github.raa0121.kokoroio.model.ChannelWithMembershipsEntity](docs/ChannelWithMembershipsEntity.md)
+ - [com.github.raa0121.kokoroio.model.ChannelWithoutMembershipEntity](docs/ChannelWithoutMembershipEntity.md)
+ - [com.github.raa0121.kokoroio.model.DeviceEntity](docs/DeviceEntity.md)
+ - [com.github.raa0121.kokoroio.model.EmbedContentEntity](docs/EmbedContentEntity.md)
+ - [com.github.raa0121.kokoroio.model.EmbedDataEntity](docs/EmbedDataEntity.md)
+ - [com.github.raa0121.kokoroio.model.EmbedDataImageInfoEntity](docs/EmbedDataImageInfoEntity.md)
+ - [com.github.raa0121.kokoroio.model.EmbedDataMediaEntity](docs/EmbedDataMediaEntity.md)
+ - [com.github.raa0121.kokoroio.model.MembershipEntity](docs/MembershipEntity.md)
+ - [com.github.raa0121.kokoroio.model.MembershipWithoutChannelEntity](docs/MembershipWithoutChannelEntity.md)
+ - [com.github.raa0121.kokoroio.model.MessageEntity](docs/MessageEntity.md)
+ - [com.github.raa0121.kokoroio.model.ProfileEntity](docs/ProfileEntity.md)
 
 
 <a name="documentation-for-authorization"></a>

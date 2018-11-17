@@ -29,7 +29,7 @@ Returns public channels.
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = ChannelsApi()
 val archived : kotlin.Boolean = true // kotlin.Boolean | 
@@ -76,7 +76,7 @@ Returns a channel
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = ChannelsApi()
 val channelId : kotlin.Int = 56 // kotlin.Int | 
@@ -123,7 +123,7 @@ Returns all of members in this channel
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = ChannelsApi()
 val channelId : kotlin.String = channelId_example // kotlin.String | 
@@ -170,7 +170,7 @@ Returns recent messages in the channel.
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = ChannelsApi()
 val channelId : kotlin.String = channelId_example // kotlin.String | 
@@ -223,7 +223,7 @@ Creates a new channel.
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = ChannelsApi()
 val channel[channelName] : kotlin.String = channel[channelName]_example // kotlin.String | 
@@ -274,7 +274,7 @@ Creates a new message.
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = ChannelsApi()
 val channelId : kotlin.String = channelId_example // kotlin.String | 
@@ -329,7 +329,7 @@ Creates a new direct message.
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = ChannelsApi()
 val targetUserProfileId : kotlin.String = targetUserProfileId_example // kotlin.String | 
@@ -376,7 +376,7 @@ Updates a channel.
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = ChannelsApi()
 val channelId : kotlin.String = channelId_example // kotlin.String | 
@@ -427,7 +427,7 @@ Archive a channel.
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = ChannelsApi()
 val channelId : kotlin.String = channelId_example // kotlin.String | 
@@ -474,7 +474,7 @@ Changes the authority of member
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = ChannelsApi()
 val channelId : kotlin.String = channelId_example // kotlin.String | 
@@ -524,7 +524,7 @@ Unarchive a channel.
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = ChannelsApi()
 val channelId : kotlin.String = channelId_example // kotlin.String | 

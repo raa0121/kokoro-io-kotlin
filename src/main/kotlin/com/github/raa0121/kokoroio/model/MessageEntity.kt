@@ -9,12 +9,12 @@
 * https://github.com/swagger-api/swagger-codegen.git
 * Do not edit the class manually.
 */
-package io.swagger.client.models
+package com.github.raa0121.kokoroio.model
 
-import io.swagger.client.models.AvatarEntity
-import io.swagger.client.models.ChannelEntity
-import io.swagger.client.models.EmbedContentEntity
-import io.swagger.client.models.ProfileEntity
+import com.github.raa0121.kokoroio.model.AvatarEntity
+import com.github.raa0121.kokoroio.model.ChannelEntity
+import com.github.raa0121.kokoroio.model.EmbedContentEntity
+import com.github.raa0121.kokoroio.model.ProfileEntity
 
 /**
  * Creates a new message.

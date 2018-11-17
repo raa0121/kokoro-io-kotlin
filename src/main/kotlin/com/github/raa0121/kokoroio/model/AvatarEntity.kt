@@ -9,55 +9,23 @@
 * https://github.com/swagger-api/swagger-codegen.git
 * Do not edit the class manually.
 */
-package io.swagger.client.models
+package com.github.raa0121.kokoroio.model
 
-import io.swagger.client.models.EmbedDataImageInfoEntity
 
 /**
  * 
- * @param raw_url Raw resource URL of media.
- * @param restriction_policy Restriction policy
- * @param type Media type
- * @param thumbnail Thumbnail image
+ * @param size 正方形画像の縦横サイズ（単位：px）
+ * @param url 画像のURL
+ * @param is_default デフォルトアバターであるか
  */
-data class EmbedDataMediaEntity (
-    /* Raw resource URL of media. */
-    val raw_url: kotlin.String? = null,
-    /* Restriction policy */
-    val restriction_policy: EmbedDataMediaEntity.RestrictionPolicy? = null,
-    /* Media type */
-    val type: EmbedDataMediaEntity.Type? = null,
-    /* Thumbnail image */
-    val thumbnail: EmbedDataImageInfoEntity? = null
+data class AvatarEntity (
+    /* 正方形画像の縦横サイズ（単位：px） */
+    val size: kotlin.Int? = null,
+    /* 画像のURL */
+    val url: kotlin.String? = null,
+    /* デフォルトアバターであるか */
+    val is_default: kotlin.Boolean? = null
 ) {
-
-    /**
-    * Restriction policy
-    * Values: unknown,safe,notSafe
-    */
-    enum class RestrictionPolicy(val value: kotlin.Any){
-    
-        unknown("Unknown"),
-    
-        safe("Safe"),
-    
-        notSafe("NotSafe");
-    
-    }
-
-    /**
-    * Media type
-    * Values: image,video,audio
-    */
-    enum class Type(val value: kotlin.Any){
-    
-        image("Image"),
-    
-        video("Video"),
-    
-        audio("Audio");
-    
-    }
 
 }
 

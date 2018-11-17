@@ -9,12 +9,13 @@
 * https://github.com/swagger-api/swagger-codegen.git
 * Do not edit the class manually.
 */
-package io.swagger.client.models
+package com.github.raa0121.kokoroio.model
 
-import io.swagger.client.models.MembershipEntity
+import com.github.raa0121.kokoroio.model.MembershipEntity
+import com.github.raa0121.kokoroio.model.MembershipWithoutChannelEntity
 
 /**
- * Returns public channels.
+ * Returns a channel
  * @param id チャンネルID
  * @param channel_name チャンネル名
  * @param kind チャンネルタイプ
@@ -24,14 +25,15 @@ import io.swagger.client.models.MembershipEntity
  * @param latest_message_published_at 最新メッセージ投稿日時
  * @param messages_count メッセージ数
  * @param membership メンバーシップ情報
+ * @param memberships 
  */
-data class ChannelEntity (
+data class ChannelWithMembershipsEntity (
     /* チャンネルID */
     val id: kotlin.String? = null,
     /* チャンネル名 */
     val channel_name: kotlin.String? = null,
     /* チャンネルタイプ */
-    val kind: ChannelEntity.Kind? = null,
+    val kind: ChannelWithMembershipsEntity.Kind? = null,
     /* アーカイブ済か */
     val archived: kotlin.Boolean? = null,
     /* チャンネル説明 */
@@ -43,7 +45,8 @@ data class ChannelEntity (
     /* メッセージ数 */
     val messages_count: kotlin.Int? = null,
     /* メンバーシップ情報 */
-    val membership: MembershipEntity? = null
+    val membership: MembershipEntity? = null,
+    val memberships: MembershipWithoutChannelEntity? = null
 ) {
 
     /**

@@ -21,7 +21,7 @@ Delete a access_token
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = AccessTokensApi()
 val accessTokenId : kotlin.String = accessTokenId_example // kotlin.String | 
@@ -68,7 +68,7 @@ Returns user&#39;s access tokens
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = AccessTokensApi()
 try {
@@ -111,7 +111,7 @@ Creates new access token
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = AccessTokensApi()
 val name : kotlin.String = name_example // kotlin.String | 

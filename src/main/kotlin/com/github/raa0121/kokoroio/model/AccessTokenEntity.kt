@@ -9,64 +9,38 @@
 * https://github.com/swagger-api/swagger-codegen.git
 * Do not edit the class manually.
 */
-package io.swagger.client.models
+package com.github.raa0121.kokoroio.model
 
-import io.swagger.client.models.EmbedDataMediaEntity
 
 /**
- * 
- * @param cache_age Cache age (in seconds)
- * @param medias 
- * @param metadata_image A media which describes the resource
- * @param restriction_policy Restriction policy
- * @param title Title of resource
- * @param type Resource type
- * @param url URL of resource
+ * Delete a access_token
+ * @param id アクセストークンID
+ * @param name アクセストークン名
+ * @param token アクセストークン
+ * @param kind アクセストークン種別
  */
-data class EmbedDataEntity (
-    /* Cache age (in seconds) */
-    val cache_age: kotlin.Int? = null,
-    /*  */
-    val medias: kotlin.Array<EmbedDataMediaEntity>? = null,
-    /* A media which describes the resource */
-    val metadata_image: EmbedDataMediaEntity? = null,
-    /* Restriction policy */
-    val restriction_policy: EmbedDataEntity.RestrictionPolicy? = null,
-    /* Title of resource */
-    val title: kotlin.String? = null,
-    /* Resource type */
-    val type: EmbedDataEntity.Type? = null,
-    /* URL of resource */
-    val url: kotlin.String? = null
+data class AccessTokenEntity (
+    /* アクセストークンID */
+    val id: kotlin.String? = null,
+    /* アクセストークン名 */
+    val name: kotlin.String? = null,
+    /* アクセストークン */
+    val token: kotlin.String? = null,
+    /* アクセストークン種別 */
+    val kind: AccessTokenEntity.Kind? = null
 ) {
 
     /**
-    * Restriction policy
-    * Values: unknown,safe,notSafe
+    * アクセストークン種別
+    * Values: user,device,essential
     */
-    enum class RestrictionPolicy(val value: kotlin.Any){
+    enum class Kind(val value: kotlin.Any){
     
-        unknown("Unknown"),
+        user("user"),
     
-        safe("Safe"),
+        device("device"),
     
-        notSafe("NotSafe");
-    
-    }
-
-    /**
-    * Resource type
-    * Values: mixedContent,singleImage,singleVideo,singleAudio
-    */
-    enum class Type(val value: kotlin.Any){
-    
-        mixedContent("MixedContent"),
-    
-        singleImage("SingleImage"),
-    
-        singleVideo("SingleVideo"),
-    
-        singleAudio("SingleAudio");
+        essential("essential");
     
     }
 

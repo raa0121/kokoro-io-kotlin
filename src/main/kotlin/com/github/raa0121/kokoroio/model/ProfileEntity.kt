@@ -9,22 +9,38 @@
 * https://github.com/swagger-api/swagger-codegen.git
 * Do not edit the class manually.
 */
-package io.swagger.client.models
+package com.github.raa0121.kokoroio.model
 
+import com.github.raa0121.kokoroio.model.AvatarEntity
 
 /**
- * 
- * @param size 正方形画像の縦横サイズ（単位：px）
- * @param url 画像のURL
- * @param is_default デフォルトアバターであるか
+ * Returns all user's profile except yours
+ * @param id プロフィールID
+ * @param type 種類（user|bot）
+ * @param screen_name スクリーンネーム
+ * @param display_name ディスプレイネーム
+ * @param avatar アバターURL
+ * @param avatars 
+ * @param archived アーカイブ済か
+ * @param invited_channels_count 招待されているチャンネルの数
  */
-data class AvatarEntity (
-    /* 正方形画像の縦横サイズ（単位：px） */
-    val size: kotlin.Int? = null,
-    /* 画像のURL */
-    val url: kotlin.String? = null,
-    /* デフォルトアバターであるか */
-    val is_default: kotlin.Boolean? = null
+data class ProfileEntity (
+    /* プロフィールID */
+    val id: kotlin.String? = null,
+    /* 種類（user|bot） */
+    val type: kotlin.String? = null,
+    /* スクリーンネーム */
+    val screen_name: kotlin.String? = null,
+    /* ディスプレイネーム */
+    val display_name: kotlin.String? = null,
+    /* アバターURL */
+    val avatar: kotlin.String? = null,
+    /*  */
+    val avatars: kotlin.Array<AvatarEntity>? = null,
+    /* アーカイブ済か */
+    val archived: kotlin.Boolean? = null,
+    /* 招待されているチャンネルの数 */
+    val invited_channels_count: kotlin.Int? = null
 ) {
 
 }

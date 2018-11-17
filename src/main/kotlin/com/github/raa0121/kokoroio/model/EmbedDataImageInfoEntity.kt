@@ -9,52 +9,23 @@
 * https://github.com/swagger-api/swagger-codegen.git
 * Do not edit the class manually.
 */
-package io.swagger.client.models
+package com.github.raa0121.kokoroio.model
 
 
 /**
  * 
- * @param id チャンネルID
- * @param channel_name チャンネル名
- * @param kind チャンネルタイプ
- * @param archived アーカイブ済か
- * @param description チャンネル説明
- * @param latest_message_id 最新メッセージ
- * @param latest_message_published_at 最新メッセージ投稿日時
- * @param messages_count メッセージ数
+ * @param url Image URL
+ * @param width Image Width
+ * @param height Image Height
  */
-data class ChannelWithoutMembershipEntity (
-    /* チャンネルID */
-    val id: kotlin.String? = null,
-    /* チャンネル名 */
-    val channel_name: kotlin.String? = null,
-    /* チャンネルタイプ */
-    val kind: ChannelWithoutMembershipEntity.Kind? = null,
-    /* アーカイブ済か */
-    val archived: kotlin.Boolean? = null,
-    /* チャンネル説明 */
-    val description: kotlin.String? = null,
-    /* 最新メッセージ */
-    val latest_message_id: kotlin.Int? = null,
-    /* 最新メッセージ投稿日時 */
-    val latest_message_published_at: java.time.LocalDateTime? = null,
-    /* メッセージ数 */
-    val messages_count: kotlin.Int? = null
+data class EmbedDataImageInfoEntity (
+    /* Image URL */
+    val url: kotlin.String? = null,
+    /* Image Width */
+    val width: kotlin.Int? = null,
+    /* Image Height */
+    val height: kotlin.Int? = null
 ) {
-
-    /**
-    * チャンネルタイプ
-    * Values: publicChannel,privateChannel,directMessage
-    */
-    enum class Kind(val value: kotlin.Any){
-    
-        publicChannel("public_channel"),
-    
-        privateChannel("private_channel"),
-    
-        directMessage("direct_message");
-    
-    }
 
 }
 

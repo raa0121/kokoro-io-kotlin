@@ -23,7 +23,7 @@ Delete a membership.
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = MembershipsApi()
 val id : kotlin.String = id_example // kotlin.String | 
@@ -70,7 +70,7 @@ Returns user&#39;s memberships.
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = MembershipsApi()
 val archived : kotlin.Boolean = true // kotlin.Boolean | 
@@ -119,7 +119,7 @@ Creates a new membership.
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = MembershipsApi()
 val channelId : kotlin.String = channelId_example // kotlin.String | 
@@ -174,7 +174,7 @@ Updates a membership.
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = MembershipsApi()
 val id : kotlin.String = id_example // kotlin.String | 
@@ -231,7 +231,7 @@ Join to invited room
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = MembershipsApi()
 val id : kotlin.String = id_example // kotlin.String | 

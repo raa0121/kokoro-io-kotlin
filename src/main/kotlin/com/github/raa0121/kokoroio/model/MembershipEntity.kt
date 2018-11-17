@@ -9,10 +9,10 @@
 * https://github.com/swagger-api/swagger-codegen.git
 * Do not edit the class manually.
 */
-package io.swagger.client.models
+package com.github.raa0121.kokoroio.model
 
-import io.swagger.client.models.ChannelWithoutMembershipEntity
-import io.swagger.client.models.ProfileEntity
+import com.github.raa0121.kokoroio.model.ChannelWithoutMembershipEntity
+import com.github.raa0121.kokoroio.model.ProfileEntity
 
 /**
  * Updates a membership.

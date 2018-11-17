@@ -9,39 +9,56 @@
 * https://github.com/swagger-api/swagger-codegen.git
 * Do not edit the class manually.
 */
-package io.swagger.client.models
+package com.github.raa0121.kokoroio.model
 
-import io.swagger.client.models.AvatarEntity
+import com.github.raa0121.kokoroio.model.MembershipEntity
 
 /**
- * Returns all user's profile except yours
- * @param id プロフィールID
- * @param type 種類（user|bot）
- * @param screen_name スクリーンネーム
- * @param display_name ディスプレイネーム
- * @param avatar アバターURL
- * @param avatars 
+ * Returns public channels.
+ * @param id チャンネルID
+ * @param channel_name チャンネル名
+ * @param kind チャンネルタイプ
  * @param archived アーカイブ済か
- * @param invited_channels_count 招待されているチャンネルの数
+ * @param description チャンネル説明
+ * @param latest_message_id 最新メッセージ
+ * @param latest_message_published_at 最新メッセージ投稿日時
+ * @param messages_count メッセージ数
+ * @param membership メンバーシップ情報
  */
-data class ProfileEntity (
-    /* プロフィールID */
+data class ChannelEntity (
+    /* チャンネルID */
     val id: kotlin.String? = null,
-    /* 種類（user|bot） */
-    val type: kotlin.String? = null,
-    /* スクリーンネーム */
-    val screen_name: kotlin.String? = null,
-    /* ディスプレイネーム */
-    val display_name: kotlin.String? = null,
-    /* アバターURL */
-    val avatar: kotlin.String? = null,
-    /*  */
-    val avatars: kotlin.Array<AvatarEntity>? = null,
+    /* チャンネル名 */
+    val channel_name: kotlin.String? = null,
+    /* チャンネルタイプ */
+    val kind: ChannelEntity.Kind? = null,
     /* アーカイブ済か */
     val archived: kotlin.Boolean? = null,
-    /* 招待されているチャンネルの数 */
-    val invited_channels_count: kotlin.Int? = null
+    /* チャンネル説明 */
+    val description: kotlin.String? = null,
+    /* 最新メッセージ */
+    val latest_message_id: kotlin.Int? = null,
+    /* 最新メッセージ投稿日時 */
+    val latest_message_published_at: java.time.LocalDateTime? = null,
+    /* メッセージ数 */
+    val messages_count: kotlin.Int? = null,
+    /* メンバーシップ情報 */
+    val membership: MembershipEntity? = null
 ) {
+
+    /**
+    * チャンネルタイプ
+    * Values: publicChannel,privateChannel,directMessage
+    */
+    enum class Kind(val value: kotlin.Any){
+    
+        publicChannel("public_channel"),
+    
+        privateChannel("private_channel"),
+    
+        directMessage("direct_message");
+    
+    }
 
 }
 

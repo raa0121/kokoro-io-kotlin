@@ -19,7 +19,7 @@ Creates a new message.
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = BotApi()
 val channelId : kotlin.String = channelId_example // kotlin.String | 

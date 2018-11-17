@@ -21,7 +21,7 @@ Delete a device
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = DevicesApi()
 val deviceIdentifier : kotlin.String = deviceIdentifier_example // kotlin.String | 
@@ -68,7 +68,7 @@ Returns user&#39;s devices
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = DevicesApi()
 try {
@@ -111,7 +111,7 @@ Creates new device
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = DevicesApi()
 val name : kotlin.String = name_example // kotlin.String | 

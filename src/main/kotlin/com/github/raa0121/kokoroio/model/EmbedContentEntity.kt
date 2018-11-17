@@ -9,22 +9,23 @@
 * https://github.com/swagger-api/swagger-codegen.git
 * Do not edit the class manually.
 */
-package io.swagger.client.models
+package com.github.raa0121.kokoroio.model
 
+import com.github.raa0121.kokoroio.model.EmbedDataEntity
 
 /**
  * 
- * @param url Image URL
- * @param width Image Width
- * @param height Image Height
+ * @param url 対象のURL
+ * @param position 並び順（昇順）
+ * @param &#x60;data&#x60; メタデータ
  */
-data class EmbedDataImageInfoEntity (
-    /* Image URL */
+data class EmbedContentEntity (
+    /* 対象のURL */
     val url: kotlin.String? = null,
-    /* Image Width */
-    val width: kotlin.Int? = null,
-    /* Image Height */
-    val height: kotlin.Int? = null
+    /* 並び順（昇順） */
+    val position: kotlin.Int? = null,
+    /* メタデータ */
+    val `data`: EmbedDataEntity? = null
 ) {
 
 }

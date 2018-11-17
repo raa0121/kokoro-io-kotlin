@@ -21,7 +21,7 @@ Returns all user&#39;s profile except yours
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = ProfilesApi()
 try {
@@ -64,7 +64,7 @@ Returns current logged-in user&#39;s profile
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = ProfilesApi()
 try {
@@ -107,7 +107,7 @@ Updates your profile.
 ```kotlin
 // Import classes:
 //import io.swagger.client.infrastructure.*
-//import io.swagger.client.models.*
+//import com.github.raa0121.kokoroio.model.*
 
 val apiInstance = ProfilesApi()
 val screenName : kotlin.String = screenName_example // kotlin.String | 

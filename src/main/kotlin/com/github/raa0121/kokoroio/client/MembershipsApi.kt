@@ -11,7 +11,7 @@
 */
 package com.github.raa0121.kokoroio.client
 
-import io.swagger.client.models.MembershipEntity
+import com.github.raa0121.kokoroio.model.MembershipEntity
 
 import io.swagger.client.infrastructure.*
 
