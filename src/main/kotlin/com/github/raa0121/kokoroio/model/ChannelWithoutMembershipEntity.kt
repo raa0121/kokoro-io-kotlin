@@ -46,15 +46,7 @@ data class ChannelWithoutMembershipEntity (
     * チャンネルタイプ
     * Values: publicChannel,privateChannel,directMessage
     */
-    enum class Kind(val value: kotlin.Any){
-    
-        publicChannel("public_channel"),
-    
-        privateChannel("private_channel"),
-    
-        directMessage("direct_message");
-    
-    }
+    enum class Kind { public_channel, private_channel, direct_message; }
 
 }
 
