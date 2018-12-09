@@ -25,8 +25,8 @@ repositories {
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile "com.squareup.moshi:moshi-kotlin:1.5.0"
-    compile "com.squareup.moshi:moshi-adapters:1.5.0"
+    compile "com.squareup.moshi:moshi-kotlin:1.8.0"
+    compile "com.squareup.moshi:moshi-adapters:1.8.0"
     compile "com.squareup.okhttp3:okhttp:3.8.0"
     testCompile "io.kotlintest:kotlintest:2.0.2"
 }
