@@ -66,32 +66,16 @@ data class MembershipWithoutChannelEntity (
     }
 
     /**
-    * 通知ポリシー
-    * Values: allMessages,onlyMentions,nothing
-    */
-    enum class NotificationPolicy(val value: kotlin.Any){
-    
-        allMessages("all_messages"),
-    
-        onlyMentions("only_mentions"),
-    
-        nothing("nothing");
-    
-    }
+     * 通知ポリシー
+     * Values: allMessages,onlyMentions,nothing
+     */
+    enum class NotificationPolicy{ all_messages, only_mentions, nothing; }
 
     /**
-    * 未読メッセージ表示ポリシー
-    * Values: keepLatest,consumeLast,consumeLatest
-    */
-    enum class ReadStateTrackingPolicy(val value: kotlin.Any){
-    
-        keepLatest("keep_latest"),
-    
-        consumeLast("consume_last"),
-    
-        consumeLatest("consume_latest");
-    
-    }
+     * 未読メッセージ表示ポリシー
+     * Values: keepLatest,consumeLast,consumeLatest
+     */
+    enum class ReadStateTrackingPolicy { keep_latest, consume_last, consume_latest; }
 
 }
 
